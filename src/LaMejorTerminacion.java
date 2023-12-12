@@ -10,12 +10,9 @@ public class LaMejorTerminacion {
         for (String valor:datos) {
             int rep=1;
             int ultimo = Integer.parseInt("" + valor.charAt(valor.length()-1));
-            if (ultimo == Integer.parseInt("" + valor.charAt(valor.length() - 1))) {
-                if (repeticion.containsKey(ultimo)){
-                    rep++;
-                }
+            if (repeticion.containsKey(ultimo)){
+                rep = repeticion.get(ultimo)+1;
             }
-
             repeticion.put(ultimo,rep);
         }
 
@@ -23,8 +20,8 @@ public class LaMejorTerminacion {
     }
     public static void main(String[] args) {
         System.out.println("Introduce varios boletos");
-        /*Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> boletos = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+        /*ArrayList<Integer> boletos = new ArrayList<>();
         int boleto;
         while (sc.hasNextInt()) {
             boleto = sc.nextInt();
@@ -38,7 +35,7 @@ public class LaMejorTerminacion {
         boletos.add("00004");
         boletos.add("03777");
         boletos.add("39804");
-        boletos.add("39746");
+        boletos.add("39744");
         System.out.println(probabilidad(boletos));
 
 

@@ -18,8 +18,8 @@ public class TelefonosII {
         David.add(1234567);
         telefonos.put("David", David);
         ArrayList<Integer> Angel = new ArrayList<>();
-        Angel.add(12345);
-        Angel.add(12345);
+        Angel.add(12345678);
+        Angel.add(12345678);
         telefonos.put("Angel", Angel);
         ArrayList<Integer> Alex = new ArrayList<>();
         Alex.add(123456789);
