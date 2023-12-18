@@ -12,7 +12,6 @@ public class Frequency {
             }
             contador.put(palabra,rep);
         }
-        String fin = contador.toString();
 
         return  contador;
     }

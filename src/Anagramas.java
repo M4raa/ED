@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Anagramas {
     public static String alfabetiza(String palabra){
@@ -14,24 +15,40 @@ public class Anagramas {
         String palabraOrdenada = orden.replace(",","").replace(" ","").replace("[","").replace("]","");
         return palabraOrdenada;
     }
-    public static HashMap<String,String> anagrama(ArrayList<String> palabras){
+    public static HashMap<String,String> anagrama(ArrayList<String> palabras, int minimo){
         HashMap<String,String> lista = new HashMap<>();
-        String todasLasPalabras ="";
         for (String palabra:palabras) {
             String palabraOrdenada = alfabetiza(palabra);
-            /*if (palabraOrdenada.equals(lista.containsKey(palabraOrdenada))){
-                todasLasPalabras += palabra;
-            }*/
-            todasLasPalabras += palabra + " ";
             if (!lista.containsKey(palabraOrdenada)){
-                lista.put(palabraOrdenada,todasLasPalabras);
+                lista.put(palabraOrdenada,palabra);
+            } else {
+                lista.replace(palabraOrdenada,lista.get(palabraOrdenada) + " " + palabra);
             }
         }
-       return lista;
+        //No mio
+        Iterator<String> iterator = lista.keySet().iterator();
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            String[] valor = lista.get(key).split(" ");
+            if (valor.length < minimo) {
+                iterator.remove();
+            }
+        }
+
+        return lista;
+    }
+    //No mio
+    public static String formatResult(HashMap<String, String> lista) {
+        StringBuilder result = new StringBuilder();
+        for (String key : lista.keySet()) {
+            result.append(key).append(": ").append(lista.get(key)).append("\n");
+        }
+        return result.toString();
     }
     public static void main(String[] args) {
         ArrayList<String> listado = new ArrayList<>();
-        /*String line;
+        int minimo=6;
+        String line;
         try {
             BufferedReader reader = new BufferedReader(new FileReader("/home/INFORMATICA/alu10663409/Escritorio/IntJ/Estructura de datos/files/anagramas.txt"));
             try {
@@ -45,7 +62,7 @@ public class Anagramas {
 
         }catch (FileNotFoundException e){
             System.out.println("El archivo no existe, por favor especifica otro.");
-        }*/
+        }/*
         listado.add("alma");
         listado.add("mala");
         listado.add("alam");
@@ -56,7 +73,8 @@ public class Anagramas {
         listado.add("ala");
         listado.add("hola");
         listado.add("ohla");
-        listado.add("aloh");
-        System.out.println(anagrama(listado));
+        listado.add("aloh");*/
+
+        System.out.println(formatResult(anagrama(listado,minimo)));
     }
 }
