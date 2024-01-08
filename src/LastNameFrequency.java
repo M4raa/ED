@@ -24,10 +24,10 @@ public class LastNameFrequency {
                 datoss.replace(dato[6], datoss.get(dato[6])+1);
             }
         }
-        return datos;
+        return datoss;
     }
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        System.out.println(contador(datos));
+        System.out.println(contador(""));
     }
 }

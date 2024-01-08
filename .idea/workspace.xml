@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/AddAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Altura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Coches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Convertir_a_array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Existe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repartiendo_Regalos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LastNameFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LastNameFrequency.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,11 +119,30 @@
       <option name="project" value="LOCAL" />
       <updated>1703151713543</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update">
+      <option name="closed" value="true" />
+      <created>1704698295541</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704698295541</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -135,11 +161,6 @@
           <url>file://$PROJECT_DIR$/src/Frequency.java</url>
           <line>9</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Botin.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
