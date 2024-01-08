@@ -8,11 +8,16 @@ public class Parentesis {
             char x=cadena.charAt(i);
             if (x=='(' || x=='[' || x=='{'){
                 lista.add(x);
-            }else if (x==')' || x==']' || x=='}'){
-                switch (i){
-                    case ')':
-                        lista.pop()='(';
-                        break;
+            }else if (x==')'){
+                if (lista.pop()=='('){
+
+                }
+            }else if (x==']'){
+                if (lista.pop()=='('){
+
+                }
+            }else if (x=='}'){
+                if (lista.pop()=='('){
 
                 }
             }
