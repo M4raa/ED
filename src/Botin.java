@@ -4,22 +4,22 @@ import java.util.HashMap;
 public class Botin {
     public static HashMap<Integer,String> repartir(int participantes, int ... billetes){
         HashMap<Integer,String> resultado = new HashMap<>();
-        ArrayList<Integer> lista = new ArrayList<>();
+        ArrayList<Integer> listaBilletes = new ArrayList<>();
         for (int billete:billetes) {
-            lista.add(billete);
+            listaBilletes.add(billete);
         }
         do {
             for (int j = 0; j < participantes; j++) {
-                int Actual= lista.get(0);
+                int Actual= listaBilletes.get(0);
                 if (resultado.containsKey(j)){
                     resultado.replace(j, resultado.get(j) +", " + Actual);
                 }else resultado.put(j, String.valueOf(Actual));
-                lista.remove(0);
-                if (lista.isEmpty()){
+                listaBilletes.remove(0);
+                if (listaBilletes.isEmpty()){
                     break;
                 }
             }
-        } while (!lista.isEmpty());
+        } while (!listaBilletes.isEmpty());
 
 
         return resultado;
