@@ -1,0 +1,129 @@
+Index: src/Anagramas.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.io.BufferedReader;\r\nimport java.io.FileNotFoundException;\r\nimport java.io.FileReader;\r\nimport java.io.IOException;\r\nimport java.util.ArrayList;\r\nimport java.util.Arrays;\r\nimport java.util.HashMap;\r\n\r\npublic class Anagramas {\r\n    public static String alfabetiza(String palabra){\r\n        char[] letras = palabra.toCharArray();\r\n        Arrays.sort(letras);\r\n        String orden = Arrays.toString(letras);\r\n        String palabraOrdenada = orden.replace(\",\",\"\").replace(\" \",\"\").replace(\"[\",\"\").replace(\"]\",\"\");\r\n        return palabraOrdenada;\r\n    }\r\n    public static HashMap<String,String> anagrama(ArrayList<String> palabras){\r\n        HashMap<String,String> lista = new HashMap<>();\r\n        String todasLasPalabras =\"\";\r\n        for (String palabra:palabras) {\r\n            String palabraOrdenada = alfabetiza(palabra);\r\n            /*if (palabraOrdenada.equals(lista.containsKey(palabraOrdenada))){\r\n                todasLasPalabras += palabra;\r\n            }*/\r\n            todasLasPalabras += palabra + \" \";\r\n            if (!lista.containsKey(palabraOrdenada)){\r\n                lista.put(palabraOrdenada,todasLasPalabras);\r\n            }\r\n        }\r\n       return lista;\r\n    }\r\n    public static void main(String[] args) {\r\n        ArrayList<String> listado = new ArrayList<>();\r\n        /*String line;\r\n        try {\r\n            BufferedReader reader = new BufferedReader(new FileReader(\"/home/INFORMATICA/alu10663409/Escritorio/IntJ/Estructura de datos/files/anagramas.txt\"));\r\n            try {\r\n                while ((line = reader.readLine()) != null) {\r\n                    listado.add(line);\r\n                }\r\n                reader.close();\r\n            }catch (IOException e){\r\n                System.out.println(\"El archivo no está bien formado\");\r\n            }\r\n\r\n        }catch (FileNotFoundException e){\r\n            System.out.println(\"El archivo no existe, por favor especifica otro.\");\r\n        }*/\r\n        listado.add(\"alma\");\r\n        listado.add(\"mala\");\r\n        listado.add(\"alam\");\r\n        listado.add(\"laam\");\r\n        listado.add(\"ele\");\r\n        listado.add(\"eel\");\r\n        listado.add(\"lee\");\r\n        listado.add(\"ala\");\r\n        listado.add(\"hola\");\r\n        listado.add(\"ohla\");\r\n        listado.add(\"aloh\");\r\n        System.out.println(anagrama(listado));\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Anagramas.java b/src/Anagramas.java
+--- a/src/Anagramas.java	(revision 79a23b9173584235ee8a9e4838ce5bee6e821f91)
++++ b/src/Anagramas.java	(date 1702558280770)
+@@ -14,19 +14,35 @@
+         String palabraOrdenada = orden.replace(",","").replace(" ","").replace("[","").replace("]","");
+         return palabraOrdenada;
+     }
+-    public static HashMap<String,String> anagrama(ArrayList<String> palabras){
+-        HashMap<String,String> lista = new HashMap<>();
+-        String todasLasPalabras ="";
++    public static HashMap<String,ArrayList<String>> anagrama(ArrayList<String> palabras){
++
++        HashMap<String,ArrayList<String>> lista = new HashMap<>();
++        ArrayList<String> anagramas = new ArrayList<>();
++
++        //Recorro el ArrayList de palabras
+         for (String palabra:palabras) {
++        //Alfabetizo la palabra
+             String palabraOrdenada = alfabetiza(palabra);
+-            /*if (palabraOrdenada.equals(lista.containsKey(palabraOrdenada))){
+-                todasLasPalabras += palabra;
++            String original = palabra;
++        //Si no está la palabra en el HashMap, se añade con el valor palabra
++            /*if (lista.containsKey(palabraOrdenada)){
++                anagramas.add(palabra);
+             }*/
+-            todasLasPalabras += palabra + " ";
++
+             if (!lista.containsKey(palabraOrdenada)){
+-                lista.put(palabraOrdenada,todasLasPalabras);
++                anagramas.add(palabra);
++                lista.put(palabraOrdenada,anagramas);
++                anagramas.clear();
+             }
++        //Si está en el HashMap la palabra, reemplaza el valor antiguo por el nuevo
++            else {
++                palabra = "" + lista.get(palabraOrdenada) +  ", " + original;
++                lista.replace(palabraOrdenada, anagramas);
++                anagramas.clear();
++            }
++
+         }
++        lista.keySet();
+        return lista;
+     }
+     public static void main(String[] args) {
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"15769863-a889-453e-924d-d15db5e7aef2\" name=\"Changes\" comment=\"Update\">\r\n      <change afterPath=\"$PROJECT_DIR$/files/anagramas.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Anagramas.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Anagramas.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ZO6O24JL0XqrqOC3q3Brzt9eEx\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/files\" />\r\n      <recent name=\"$PROJECT_DIR$/src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"15769863-a889-453e-924d-d15db5e7aef2\" name=\"Changes\" comment=\"\" />\r\n      <created>1702280742384</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1702280742384</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702280965772</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702280965772</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702289792188</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702289792188</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Update\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702376301437</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702376301437</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Update\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/PaisCapital.java</url>\r\n          <line>7</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 79a23b9173584235ee8a9e4838ce5bee6e821f91)
++++ b/.idea/workspace.xml	(date 1702558043405)
+@@ -5,7 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update">
+-      <change afterPath="$PROJECT_DIR$/files/anagramas.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Anagramas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Anagramas.java" afterDir="false" />
+     </list>
+@@ -36,18 +36,18 @@
+     <option name="showLibraryContents" value="true" />
+     <option name="showMembers" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "project.structure.last.edited": "Modules",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/files" />
+@@ -102,6 +102,11 @@
+           <url>file://$PROJECT_DIR$/src/PaisCapital.java</url>
+           <line>7</line>
+           <option name="timeStamp" value="1" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Anagramas.java</url>
++          <line>18</line>
++          <option name="timeStamp" value="2" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 79a23b9173584235ee8a9e4838ce5bee6e821f91)
++++ b/.idea/misc.xml	(date 1702549504537)
+@@ -1,4 +1,3 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
