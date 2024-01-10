@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LastNameFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LastNameFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/AddAll.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/AddAll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/Altura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/Altura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/Convertir_a_array.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/Convertir_a_array.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/Existe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/Existe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Altura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Altura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Convertir_a_array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Convertir_a_array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Existe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Existe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +170,15 @@
           <url>file://$PROJECT_DIR$/src/Frequency.java</url>
           <line>9</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Altura.java</url>
+          <line>33</line>
+          <properties class="Altura" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
