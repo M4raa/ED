@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/Altura1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2024_9_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_01_2024_9_06__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/Altura.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/Altura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Altura1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Altura1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
