@@ -39,7 +39,6 @@ public class Altura {
         }
         return cuantos;
     }
-
     public static void mostrarResultados() {
         int alumnos = leerAlumnos();
         ArrayList<Double> alturas = leerAlturas(alumnos);

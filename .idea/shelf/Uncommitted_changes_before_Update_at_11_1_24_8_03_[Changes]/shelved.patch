@@ -1,0 +1,64 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"15769863-a889-453e-924d-d15db5e7aef2\" name=\"Changes\" comment=\"Update\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/LastNameFrequency.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/LastNameFrequency.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"2ZO6O24JL0XqrqOC3q3Brzt9eEx\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n    <option name=\"showMembers\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/files\" />\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"15769863-a889-453e-924d-d15db5e7aef2\" name=\"Changes\" comment=\"\" />\n      <created>1702280742384</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1702280742384</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702280965772</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702280965772</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702289792188</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702289792188</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702376301437</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702376301437</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702546949949</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702546949949</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702894611218</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702894611218</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1703151713543</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1703151713543</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1704698295541</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1704698295541</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Update\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1704701753160</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1704701753160</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"9\" />\n    <servers />\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"com.intellij.fileTypeFactory\" implementationName=\"*.csv\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Update\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/PaisCapital.java</url>\n          <line>7</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/Frequency.java</url>\n          <line>9</line>\n          <option name=\"timeStamp\" value=\"2\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3e2fb3bd6770a748e9f40572f6eecc96ef6e8022)
++++ b/.idea/workspace.xml	(date 1704706891798)
+@@ -4,11 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Estructura de datos/LastNameFrequency.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/LastNameFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LastNameFrequency.java" afterDir="false" />
+-    </list>
++    <list default="true" id="15769863-a889-453e-924d-d15db5e7aef2" name="Changes" comment="Update" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -130,7 +126,39 @@
+       <option name="project" value="LOCAL" />
+       <updated>1704701753160</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="Update">
++      <option name="closed" value="true" />
++      <created>1704704287228</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1704704287228</updated>
++    </task>
++    <task id="LOCAL-00010" summary="Update">
++      <option name="closed" value="true" />
++      <created>1704704347522</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1704704347522</updated>
++    </task>
++    <task id="LOCAL-00011" summary="Update">
++      <option name="closed" value="true" />
++      <created>1704706469114</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1704706469114</updated>
++    </task>
++    <task id="LOCAL-00012" summary="Update">
++      <option name="closed" value="true" />
++      <created>1704706886702</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1704706886702</updated>
++    </task>
++    <option name="localTasksCounter" value="13" />
+     <servers />
+   </component>
+   <component name="UnknownFeatures">
